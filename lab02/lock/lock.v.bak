@@ -1,0 +1,223 @@
+// Copyright (C) 1991-2010 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// PROGRAM		"Quartus II"
+// VERSION		"Version 10.0 Build 218 06/27/2010 SJ Web Edition"
+// CREATED		"Sat Oct 05 15:41:13 2019"
+
+module lock(
+	x0,
+	x1,
+	x2,
+	x3,
+	clk,
+	clean,
+	unlock,
+	lock,
+	a1,
+	a2,
+	a3,
+	a4
+);
+
+
+input wire	x0;
+input wire	x1;
+input wire	x2;
+input wire	x3;
+input wire	clk;
+input wire	clean;
+output wire	unlock;
+output wire	lock;
+output wire	a1;
+output wire	a2;
+output wire	a3;
+output wire	a4;
+
+wire	SYNTHESIZED_WIRE_0;
+wire	SYNTHESIZED_WIRE_1;
+wire	SYNTHESIZED_WIRE_2;
+wire	SYNTHESIZED_WIRE_3;
+wire	SYNTHESIZED_WIRE_4;
+wire	SYNTHESIZED_WIRE_36;
+reg	SYNTHESIZED_WIRE_37;
+reg	SYNTHESIZED_WIRE_38;
+reg	SYNTHESIZED_WIRE_39;
+wire	SYNTHESIZED_WIRE_6;
+wire	SYNTHESIZED_WIRE_7;
+reg	SYNTHESIZED_WIRE_40;
+wire	SYNTHESIZED_WIRE_8;
+wire	SYNTHESIZED_WIRE_9;
+wire	SYNTHESIZED_WIRE_10;
+wire	SYNTHESIZED_WIRE_11;
+wire	SYNTHESIZED_WIRE_12;
+wire	SYNTHESIZED_WIRE_13;
+wire	SYNTHESIZED_WIRE_14;
+wire	SYNTHESIZED_WIRE_15;
+wire	SYNTHESIZED_WIRE_18;
+reg	SYNTHESIZED_WIRE_41;
+wire	SYNTHESIZED_WIRE_19;
+wire	SYNTHESIZED_WIRE_20;
+wire	SYNTHESIZED_WIRE_21;
+wire	SYNTHESIZED_WIRE_22;
+wire	SYNTHESIZED_WIRE_24;
+wire	SYNTHESIZED_WIRE_25;
+wire	SYNTHESIZED_WIRE_28;
+wire	SYNTHESIZED_WIRE_29;
+wire	SYNTHESIZED_WIRE_30;
+wire	SYNTHESIZED_WIRE_31;
+wire	SYNTHESIZED_WIRE_32;
+wire	SYNTHESIZED_WIRE_33;
+wire	SYNTHESIZED_WIRE_34;
+wire	SYNTHESIZED_WIRE_35;
+
+assign	unlock = SYNTHESIZED_WIRE_40;
+assign	a1 = SYNTHESIZED_WIRE_39;
+assign	a2 = SYNTHESIZED_WIRE_38;
+assign	a3 = SYNTHESIZED_WIRE_37;
+assign	a4 = SYNTHESIZED_WIRE_40;
+
+
+
+
+always@(posedge clk or negedge clean)
+begin
+if (!clean)
+	begin
+	SYNTHESIZED_WIRE_41 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_41 = SYNTHESIZED_WIRE_0;
+	end
+end
+
+
+always@(posedge clk or negedge clean)
+begin
+if (!clean)
+	begin
+	SYNTHESIZED_WIRE_39 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_39 = SYNTHESIZED_WIRE_1;
+	end
+end
+
+
+always@(posedge clk or negedge clean)
+begin
+if (!clean)
+	begin
+	SYNTHESIZED_WIRE_38 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_38 = SYNTHESIZED_WIRE_2;
+	end
+end
+
+
+always@(posedge clk or negedge clean)
+begin
+if (!clean)
+	begin
+	SYNTHESIZED_WIRE_37 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_37 = SYNTHESIZED_WIRE_3;
+	end
+end
+
+
+always@(posedge clk or negedge clean)
+begin
+if (!clean)
+	begin
+	SYNTHESIZED_WIRE_40 = 0;
+	end
+else
+	begin
+	SYNTHESIZED_WIRE_40 = SYNTHESIZED_WIRE_4;
+	end
+end
+
+assign	SYNTHESIZED_WIRE_34 = SYNTHESIZED_WIRE_36 | x1 | x2 | x0;
+
+assign	SYNTHESIZED_WIRE_32 = ~(SYNTHESIZED_WIRE_37 | SYNTHESIZED_WIRE_38 | SYNTHESIZED_WIRE_39);
+
+assign	SYNTHESIZED_WIRE_13 = SYNTHESIZED_WIRE_38 & SYNTHESIZED_WIRE_6;
+
+assign	SYNTHESIZED_WIRE_7 = x2 | x0;
+
+assign	SYNTHESIZED_WIRE_15 = SYNTHESIZED_WIRE_37 & SYNTHESIZED_WIRE_7;
+
+assign	SYNTHESIZED_WIRE_14 = SYNTHESIZED_WIRE_40 & SYNTHESIZED_WIRE_8;
+
+assign	SYNTHESIZED_WIRE_12 = SYNTHESIZED_WIRE_9 | SYNTHESIZED_WIRE_10;
+
+assign	SYNTHESIZED_WIRE_33 = SYNTHESIZED_WIRE_11 | SYNTHESIZED_WIRE_12;
+
+assign	SYNTHESIZED_WIRE_11 = SYNTHESIZED_WIRE_13 | SYNTHESIZED_WIRE_14 | SYNTHESIZED_WIRE_15;
+
+assign	SYNTHESIZED_WIRE_18 = x2 | SYNTHESIZED_WIRE_36;
+
+assign	SYNTHESIZED_WIRE_8 =  ~SYNTHESIZED_WIRE_36;
+
+assign	SYNTHESIZED_WIRE_19 = SYNTHESIZED_WIRE_39 & SYNTHESIZED_WIRE_18;
+
+assign	SYNTHESIZED_WIRE_22 = x3 & SYNTHESIZED_WIRE_38;
+
+assign	SYNTHESIZED_WIRE_20 = x3 & SYNTHESIZED_WIRE_37;
+
+assign	SYNTHESIZED_WIRE_21 = SYNTHESIZED_WIRE_41 & x3;
+
+assign	SYNTHESIZED_WIRE_1 = SYNTHESIZED_WIRE_19 | SYNTHESIZED_WIRE_20 | SYNTHESIZED_WIRE_21 | SYNTHESIZED_WIRE_22;
+
+assign	SYNTHESIZED_WIRE_25 = SYNTHESIZED_WIRE_38 & SYNTHESIZED_WIRE_36;
+
+assign	SYNTHESIZED_WIRE_24 = SYNTHESIZED_WIRE_39 & x2;
+
+assign	SYNTHESIZED_WIRE_2 = SYNTHESIZED_WIRE_24 | SYNTHESIZED_WIRE_25;
+
+assign	SYNTHESIZED_WIRE_29 = SYNTHESIZED_WIRE_37 & SYNTHESIZED_WIRE_36;
+
+assign	SYNTHESIZED_WIRE_28 = SYNTHESIZED_WIRE_38 & x0;
+
+assign	SYNTHESIZED_WIRE_31 = SYNTHESIZED_WIRE_40 & SYNTHESIZED_WIRE_36;
+
+assign	SYNTHESIZED_WIRE_30 = SYNTHESIZED_WIRE_37 & x1;
+
+assign	SYNTHESIZED_WIRE_3 = SYNTHESIZED_WIRE_28 | SYNTHESIZED_WIRE_29;
+
+assign	SYNTHESIZED_WIRE_4 = SYNTHESIZED_WIRE_30 | SYNTHESIZED_WIRE_31;
+
+assign	SYNTHESIZED_WIRE_0 = SYNTHESIZED_WIRE_32 | SYNTHESIZED_WIRE_33;
+
+assign	lock =  ~SYNTHESIZED_WIRE_40;
+
+assign	SYNTHESIZED_WIRE_10 = SYNTHESIZED_WIRE_41 & SYNTHESIZED_WIRE_34;
+
+assign	SYNTHESIZED_WIRE_35 = x1 | x0;
+
+assign	SYNTHESIZED_WIRE_9 = SYNTHESIZED_WIRE_39 & SYNTHESIZED_WIRE_35;
+
+assign	SYNTHESIZED_WIRE_6 = x2 | x1;
+
+assign	SYNTHESIZED_WIRE_36 = ~(x0 | x2 | x1 | x3);
+
+
+endmodule
