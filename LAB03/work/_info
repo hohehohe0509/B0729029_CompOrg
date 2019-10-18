@@ -1,0 +1,37 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\10.0
+vreg2
+I3Ce:UmbNZc?LUjPiK^K;R3
+Vh3jgPcKzfS63i2GYZZAo42
+Z0 dC:\reg
+w1571383691
+8C:/reg/reg2.v
+FC:/reg/reg2.v
+L0 19
+Z1 OV;L;6.5e;42
+r1
+31
+Z2 o-work work -nocovercells -O0
+!s100 HeNzYm8RlLXk^<FmU5Ia>0
+!s85 0
+!s101 -O0
+Z3 !s102 -nocovercells
+vtb
+!s100 _XQ`cH[hFSX]oLd2X^;1o1
+ITc9RFQK<l?JdM@YXHmS]E0
+VV@Xn<HnSRM[I5c1?BH]3a3
+Z4 dC:\reg
+w1571383794
+8C:/Users/user/Desktop/CompOrg-master/tb.v
+FC:/Users/user/Desktop/CompOrg-master/tb.v
+L0 14
+R1
+r1
+!s85 0
+31
+!s101 -O0
+R3
+R2

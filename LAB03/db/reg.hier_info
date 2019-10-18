@@ -1,0 +1,35 @@
+|reg2
+out1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+in1 => inst8.DATAIN
+clock => inst8.CLK
+clock => inst9.CLK
+clock => inst10.CLK
+clock => inst11.CLK
+clock => inst12.CLK
+clock => inst13.CLK
+clock => inst14.CLK
+clock => inst15.CLK
+load => inst8.ENA
+load => inst9.ENA
+load => inst10.ENA
+load => inst11.ENA
+load => inst12.ENA
+load => inst13.ENA
+load => inst14.ENA
+load => inst15.ENA
+out2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+in2 => inst9.DATAIN
+out3 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+in3 => inst10.DATAIN
+out4 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in4 => inst11.DATAIN
+out5 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+in5 => inst12.DATAIN
+out6 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+in6 => inst13.DATAIN
+out7 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+in7 => inst14.DATAIN
+out8 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+in8 => inst15.DATAIN
+
+
