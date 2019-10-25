@@ -1,0 +1,107 @@
+Quartus II
+Version 10.0 Build 218 06/27/2010 SJ Web Edition
+13
+1247
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+freq_div_1Hz
+# storage
+db|counter.(1).cnf
+db|counter.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+freq_div_1hz.v
+e236d1ed663a5a81657efae18626bcae
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+CLK_IN_FREQ50000000HALF_FREQ25000000
+# end
+# entity
+counter
+# storage
+db|counter.(0).cnf
+db|counter.(0).cnf
+# case_insensitive
+# source_file
+counter.bdf
+64f2fd99575a6650ca65947db31f9fba
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+MUX41
+# storage
+db|counter.(3).cnf
+db|counter.(3).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|others|maxplus2|mux41.bdf
+dbcadb65afe7784f4ad32926b2ac5b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Block4
+# storage
+db|counter.(4).cnf
+db|counter.(4).cnf
+# case_insensitive
+# source_file
+block4.bdf
+d57e4190eb036c8a7b6e082dcba0b9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# complete
+
