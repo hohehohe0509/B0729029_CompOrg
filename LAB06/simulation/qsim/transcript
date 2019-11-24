@@ -1,0 +1,22 @@
+# do LAB06.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:12:42 on Nov 24,2019
+# vlog -work work LAB06.vo 
+# -- Compiling module LAB06
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	LAB06
+# End time: 14:12:42 on Nov 24,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:12:42 on Nov 24,2019
+# vlog -work work Waveform1.vwf.vt 
+# -- Compiling module LAB06_vlg_vec_tst
+# 
+# Top level modules:
+# 	LAB06_vlg_vec_tst
+# End time: 14:12:42 on Nov 24,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# after#1

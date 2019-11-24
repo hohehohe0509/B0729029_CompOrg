@@ -1,0 +1,335 @@
+|LAB06
+R0 <= 8_bit_DFF:inst24.R0
+B0 => 8_bit_mux:inst1.A0
+start => control:inst23.START
+CLEAN => control:inst23.CLEAN
+CLEAN => 8_bit_DFF:inst24.CLEAN
+CLK => control:inst23.CLK
+CLK => 8_bit_DFF:inst24.CLK
+B1 => 8_bit_mux:inst1.A1
+B2 => 8_bit_mux:inst1.A2
+B3 => 8_bit_mux:inst1.A3
+B4 => 8_bit_mux:inst1.A4
+B5 => 8_bit_mux:inst1.A5
+B6 => 8_bit_mux:inst1.A6
+B7 => 8_bit_mux:inst1.A7
+A0 => 8_bit_mux:inst.A0
+A1 => 8_bit_mux:inst.A1
+A2 => 8_bit_mux:inst.A2
+A3 => 8_bit_mux:inst.A3
+A4 => 8_bit_mux:inst.A4
+A5 => 8_bit_mux:inst.A5
+A6 => 8_bit_mux:inst.A6
+A7 => 8_bit_mux:inst.A7
+R1 <= 8_bit_DFF:inst24.R1
+R2 <= 8_bit_DFF:inst24.R2
+R3 <= 8_bit_DFF:inst24.R3
+R4 <= 8_bit_DFF:inst24.R4
+R5 <= 8_bit_DFF:inst24.R5
+R6 <= 8_bit_DFF:inst24.R6
+R7 <= 8_bit_DFF:inst24.R7
+
+
+|LAB06|8_bit_DFF:inst24
+R0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLEAN => inst.ACLR
+CLEAN => inst1.ACLR
+CLEAN => inst2.ACLR
+CLEAN => inst3.ACLR
+CLEAN => inst4.ACLR
+CLEAN => inst5.ACLR
+CLEAN => inst6.ACLR
+CLEAN => inst7.ACLR
+Y0 => inst.DATAIN
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst4.CLK
+CLK => inst5.CLK
+CLK => inst6.CLK
+CLK => inst7.CLK
+LOAD => inst.ENA
+LOAD => inst1.ENA
+LOAD => inst2.ENA
+LOAD => inst3.ENA
+LOAD => inst4.ENA
+LOAD => inst5.ENA
+LOAD => inst6.ENA
+LOAD => inst7.ENA
+R1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Y1 => inst1.DATAIN
+R2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Y2 => inst2.DATAIN
+R3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y3 => inst3.DATAIN
+R4 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Y4 => inst4.DATAIN
+R5 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Y5 => inst5.DATAIN
+R6 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Y6 => inst6.DATAIN
+R7 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Y7 => inst7.DATAIN
+
+
+|LAB06|7483:inst18
+C4 <= 83.DB_MAX_OUTPUT_PORT_TYPE
+B4 => 22.IN0
+B4 => 26.IN0
+A4 => 22.IN1
+A4 => 26.IN1
+B3 => 21.IN0
+B3 => 25.IN0
+A3 => 21.IN1
+A3 => 25.IN1
+B2 => 20.IN0
+B2 => 24.IN0
+A2 => 20.IN1
+A2 => 24.IN1
+B1 => 19.IN0
+B1 => 23.IN0
+A1 => 19.IN1
+A1 => 23.IN1
+C0 => 17.IN0
+S4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= 42.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB06|8_bit_mux:inst1
+Y0 <= 21mux:inst.Y
+S0 => 21mux:inst.S
+B0 => 21mux:inst.B
+A0 => 21mux:inst.A
+Y1 <= 21mux:inst1.Y
+S1 => 21mux:inst1.S
+B1 => 21mux:inst1.B
+A1 => 21mux:inst1.A
+Y2 <= 21mux:inst2.Y
+S2 => 21mux:inst2.S
+B2 => 21mux:inst2.B
+A2 => 21mux:inst2.A
+Y3 <= 21mux:inst3.Y
+S3 => 21mux:inst3.S
+B3 => 21mux:inst3.B
+A3 => 21mux:inst3.A
+Y4 <= 21mux:inst4.Y
+S4 => 21mux:inst4.S
+B4 => 21mux:inst4.B
+A4 => 21mux:inst4.A
+Y5 <= 21mux:inst5.Y
+S5 => 21mux:inst5.S
+B5 => 21mux:inst5.B
+A5 => 21mux:inst5.A
+Y6 <= 21mux:inst6.Y
+S6 => 21mux:inst6.S
+B6 => 21mux:inst6.B
+A6 => 21mux:inst6.A
+Y7 <= 21mux:inst7.Y
+S7 => 21mux:inst7.S
+B7 => 21mux:inst7.B
+A7 => 21mux:inst7.A
+
+
+|LAB06|8_bit_mux:inst1|21mux:inst
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|8_bit_mux:inst1|21mux:inst1
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|8_bit_mux:inst1|21mux:inst2
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|8_bit_mux:inst1|21mux:inst3
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|8_bit_mux:inst1|21mux:inst4
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|8_bit_mux:inst1|21mux:inst5
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|8_bit_mux:inst1|21mux:inst6
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|8_bit_mux:inst1|21mux:inst7
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|control:inst23
+LOAD <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLEAN => inst.ACLR
+CLEAN => inst1.ACLR
+CLK => inst.CLK
+CLK => inst1.CLK
+Rn-1 => inst2.IN0
+Rn-1 => inst5.IN2
+START => inst4.IN1
+S0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB06|8_bit_mux:inst
+Y0 <= 21mux:inst.Y
+S0 => 21mux:inst.S
+B0 => 21mux:inst.B
+A0 => 21mux:inst.A
+Y1 <= 21mux:inst1.Y
+S1 => 21mux:inst1.S
+B1 => 21mux:inst1.B
+A1 => 21mux:inst1.A
+Y2 <= 21mux:inst2.Y
+S2 => 21mux:inst2.S
+B2 => 21mux:inst2.B
+A2 => 21mux:inst2.A
+Y3 <= 21mux:inst3.Y
+S3 => 21mux:inst3.S
+B3 => 21mux:inst3.B
+A3 => 21mux:inst3.A
+Y4 <= 21mux:inst4.Y
+S4 => 21mux:inst4.S
+B4 => 21mux:inst4.B
+A4 => 21mux:inst4.A
+Y5 <= 21mux:inst5.Y
+S5 => 21mux:inst5.S
+B5 => 21mux:inst5.B
+A5 => 21mux:inst5.A
+Y6 <= 21mux:inst6.Y
+S6 => 21mux:inst6.S
+B6 => 21mux:inst6.B
+A6 => 21mux:inst6.A
+Y7 <= 21mux:inst7.Y
+S7 => 21mux:inst7.S
+B7 => 21mux:inst7.B
+A7 => 21mux:inst7.A
+
+
+|LAB06|8_bit_mux:inst|21mux:inst
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|8_bit_mux:inst|21mux:inst1
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|8_bit_mux:inst|21mux:inst2
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|8_bit_mux:inst|21mux:inst3
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|8_bit_mux:inst|21mux:inst4
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|8_bit_mux:inst|21mux:inst5
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|8_bit_mux:inst|21mux:inst6
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|8_bit_mux:inst|21mux:inst7
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|LAB06|7483:inst19
+C4 <= 83.DB_MAX_OUTPUT_PORT_TYPE
+B4 => 22.IN0
+B4 => 26.IN0
+A4 => 22.IN1
+A4 => 26.IN1
+B3 => 21.IN0
+B3 => 25.IN0
+A3 => 21.IN1
+A3 => 25.IN1
+B2 => 20.IN0
+B2 => 24.IN0
+A2 => 20.IN1
+A2 => 24.IN1
+B1 => 19.IN0
+B1 => 23.IN0
+A1 => 19.IN1
+A1 => 23.IN1
+C0 => 17.IN0
+S4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= 42.DB_MAX_OUTPUT_PORT_TYPE
+
+

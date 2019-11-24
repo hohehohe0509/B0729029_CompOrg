@@ -1,0 +1,1140 @@
+$comment
+	File created using the following command:
+		vcd file LAB06.msim.vcd -direction
+$end
+$date
+	Sun Nov 24 14:12:43 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module LAB06_vlg_vec_tst $end
+$var reg 1 ! A0 $end
+$var reg 1 " A1 $end
+$var reg 1 # A2 $end
+$var reg 1 $ A3 $end
+$var reg 1 % A4 $end
+$var reg 1 & A5 $end
+$var reg 1 ' A6 $end
+$var reg 1 ( A7 $end
+$var reg 1 ) B0 $end
+$var reg 1 * B1 $end
+$var reg 1 + B2 $end
+$var reg 1 , B3 $end
+$var reg 1 - B4 $end
+$var reg 1 . B5 $end
+$var reg 1 / B6 $end
+$var reg 1 0 B7 $end
+$var reg 1 1 CLEAN $end
+$var reg 1 2 CLK $end
+$var reg 1 3 start $end
+$var wire 1 4 R0 $end
+$var wire 1 5 R1 $end
+$var wire 1 6 R2 $end
+$var wire 1 7 R3 $end
+$var wire 1 8 R4 $end
+$var wire 1 9 R5 $end
+$var wire 1 : R6 $end
+$var wire 1 ; R7 $end
+
+$scope module i1 $end
+$var wire 1 < gnd $end
+$var wire 1 = vcc $end
+$var wire 1 > unknown $end
+$var tri1 1 ? devclrn $end
+$var tri1 1 @ devpor $end
+$var tri1 1 A devoe $end
+$var wire 1 B R0~output_o $end
+$var wire 1 C R1~output_o $end
+$var wire 1 D R2~output_o $end
+$var wire 1 E R3~output_o $end
+$var wire 1 F R4~output_o $end
+$var wire 1 G R5~output_o $end
+$var wire 1 H R6~output_o $end
+$var wire 1 I R7~output_o $end
+$var wire 1 J CLK~input_o $end
+$var wire 1 K CLK~inputclkctrl_outclk $end
+$var wire 1 L A7~input_o $end
+$var wire 1 M B7~input_o $end
+$var wire 1 N B5~input_o $end
+$var wire 1 O A5~input_o $end
+$var wire 1 P inst19|24~combout $end
+$var wire 1 Q A6~input_o $end
+$var wire 1 R B6~input_o $end
+$var wire 1 S inst19|44~0_combout $end
+$var wire 1 T B4~input_o $end
+$var wire 1 U inst1|inst4|6~combout $end
+$var wire 1 V inst1|inst5|6~combout $end
+$var wire 1 W A4~input_o $end
+$var wire 1 X B3~input_o $end
+$var wire 1 Y inst1|inst3|6~combout $end
+$var wire 1 Z A3~input_o $end
+$var wire 1 [ B2~input_o $end
+$var wire 1 \ A2~input_o $end
+$var wire 1 ] B1~input_o $end
+$var wire 1 ^ B0~input_o $end
+$var wire 1 _ A1~input_o $end
+$var wire 1 ` A0~input_o $end
+$var wire 1 a inst18|2~0_combout $end
+$var wire 1 b inst18|2~1_combout $end
+$var wire 1 c inst18|19~combout $end
+$var wire 1 d inst|inst1|5~0_combout $end
+$var wire 1 e inst18|43~combout $end
+$var wire 1 f CLEAN~input_o $end
+$var wire 1 g CLEAN~inputclkctrl_outclk $end
+$var wire 1 h start~input_o $end
+$var wire 1 i inst23|inst3~combout $end
+$var wire 1 j inst23|inst~q $end
+$var wire 1 k inst24|inst1~q $end
+$var wire 1 l inst18|2~2_combout $end
+$var wire 1 m inst18|44~0_combout $end
+$var wire 1 n inst1|inst1|6~combout $end
+$var wire 1 o inst18|44~combout $end
+$var wire 1 p inst24|inst2~q $end
+$var wire 1 q inst18|21~0_combout $end
+$var wire 1 r inst18|45~combout $end
+$var wire 1 s inst24|inst3~q $end
+$var wire 1 t inst|inst3|5~0_combout $end
+$var wire 1 u inst18|2~3_combout $end
+$var wire 1 v inst19|42~combout $end
+$var wire 1 w inst24|inst4~q $end
+$var wire 1 x inst|inst4|5~0_combout $end
+$var wire 1 y inst19|43~0_combout $end
+$var wire 1 z inst19|43~combout $end
+$var wire 1 { inst24|inst5~q $end
+$var wire 1 | inst|inst5|5~0_combout $end
+$var wire 1 } inst19|51~0_combout $end
+$var wire 1 ~ inst19|18~0_combout $end
+$var wire 1 !! inst19|44~combout $end
+$var wire 1 "! inst24|inst6~q $end
+$var wire 1 #! inst19|45~2_combout $end
+$var wire 1 $! inst19|45~3_combout $end
+$var wire 1 %! inst19|45~6_combout $end
+$var wire 1 &! inst19|45~4_combout $end
+$var wire 1 '! inst19|45~5_combout $end
+$var wire 1 (! inst24|inst7~q $end
+$var wire 1 )! inst23|inst1~0_combout $end
+$var wire 1 *! inst23|inst1~q $end
+$var wire 1 +! inst18|27~0_combout $end
+$var wire 1 ,! inst24|inst~q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+1#
+0$
+0%
+0&
+0'
+0(
+1)
+1*
+0+
+0,
+0-
+0.
+0/
+00
+11
+02
+13
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+1=
+x>
+1?
+1@
+1A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+1\
+1]
+1^
+0_
+1`
+0a
+0b
+1c
+0d
+0e
+1f
+1g
+1h
+1i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+1$!
+1%!
+1&!
+0'!
+0(!
+1)!
+0*!
+0+!
+0,!
+$end
+#5000
+12
+1J
+1K
+1*!
+1j
+1q
+1n
+1m
+0i
+1e
+1u
+1r
+1o
+0$!
+1~
+1z
+1v
+0%!
+1!!
+0&!
+1'!
+#10000
+02
+0J
+0K
+#15000
+12
+1J
+1K
+0j
+1(!
+1"!
+1{
+1w
+1s
+1p
+1k
+1C
+1D
+1E
+1F
+1G
+1H
+1I
+1;
+1:
+19
+18
+17
+16
+15
+1i
+0)!
+#20000
+02
+0J
+0K
+#25000
+12
+1J
+1K
+0*!
+1j
+1#!
+1|
+1y
+1x
+1t
+0n
+1l
+1d
+1S
+0'!
+0i
+0e
+1}
+0z
+0v
+0r
+0o
+1e
+0!!
+#30000
+03
+02
+0h
+0J
+0K
+#35000
+12
+1J
+1K
+0j
+0(!
+0"!
+0{
+0w
+0s
+0p
+0D
+0E
+0F
+0G
+0H
+0I
+0#!
+0S
+0|
+0y
+0x
+0t
+0q
+0m
+0;
+0:
+09
+08
+07
+06
+1)!
+1'!
+0}
+1!!
+1z
+1v
+1r
+1o
+#40000
+02
+0J
+0K
+#45000
+12
+1J
+1K
+1*!
+1q
+1n
+1m
+0l
+0d
+0e
+1e
+#50000
+02
+0J
+0K
+#55000
+12
+1J
+1K
+#60000
+02
+0J
+0K
+#65000
+12
+1J
+1K
+#70000
+02
+0J
+0K
+#75000
+12
+1J
+1K
+#80000
+02
+0J
+0K
+#85000
+12
+1J
+1K
+#90000
+02
+0J
+0K
+#95000
+12
+1J
+1K
+#100000
+02
+0J
+0K
+#105000
+12
+1J
+1K
+#110000
+02
+0J
+0K
+#115000
+12
+1J
+1K
+#120000
+02
+0J
+0K
+#125000
+12
+1J
+1K
+#130000
+02
+0J
+0K
+#135000
+12
+1J
+1K
+#140000
+02
+0J
+0K
+#145000
+12
+1J
+1K
+#150000
+02
+0J
+0K
+#155000
+12
+1J
+1K
+#160000
+02
+0J
+0K
+#165000
+12
+1J
+1K
+#170000
+02
+0J
+0K
+#175000
+12
+1J
+1K
+#180000
+02
+0J
+0K
+#185000
+12
+1J
+1K
+#190000
+02
+0J
+0K
+#195000
+12
+1J
+1K
+#200000
+02
+0J
+0K
+#205000
+12
+1J
+1K
+#210000
+02
+0J
+0K
+#215000
+12
+1J
+1K
+#220000
+02
+0J
+0K
+#225000
+12
+1J
+1K
+#230000
+02
+0J
+0K
+#235000
+12
+1J
+1K
+#240000
+02
+0J
+0K
+#245000
+12
+1J
+1K
+#250000
+02
+0J
+0K
+#255000
+12
+1J
+1K
+#260000
+02
+0J
+0K
+#265000
+12
+1J
+1K
+#270000
+02
+0J
+0K
+#275000
+12
+1J
+1K
+#280000
+02
+0J
+0K
+#285000
+12
+1J
+1K
+#290000
+02
+0J
+0K
+#295000
+12
+1J
+1K
+#300000
+02
+0J
+0K
+#305000
+12
+1J
+1K
+#310000
+02
+0J
+0K
+#315000
+12
+1J
+1K
+#320000
+02
+0J
+0K
+#325000
+12
+1J
+1K
+#330000
+02
+0J
+0K
+#335000
+12
+1J
+1K
+#340000
+02
+0J
+0K
+#345000
+12
+1J
+1K
+#350000
+02
+0J
+0K
+#355000
+12
+1J
+1K
+#360000
+02
+0J
+0K
+#365000
+12
+1J
+1K
+#370000
+02
+0J
+0K
+#375000
+12
+1J
+1K
+#380000
+02
+0J
+0K
+#385000
+12
+1J
+1K
+#390000
+02
+0J
+0K
+#395000
+12
+1J
+1K
+#400000
+02
+0J
+0K
+#405000
+12
+1J
+1K
+#410000
+02
+0J
+0K
+#415000
+12
+1J
+1K
+#420000
+02
+0J
+0K
+#425000
+12
+1J
+1K
+#430000
+02
+0J
+0K
+#435000
+12
+1J
+1K
+#440000
+02
+0J
+0K
+#445000
+12
+1J
+1K
+#450000
+02
+0J
+0K
+#455000
+12
+1J
+1K
+#460000
+02
+0J
+0K
+#465000
+12
+1J
+1K
+#470000
+02
+0J
+0K
+#475000
+12
+1J
+1K
+#480000
+02
+0J
+0K
+#485000
+12
+1J
+1K
+#490000
+02
+0J
+0K
+#495000
+12
+1J
+1K
+#500000
+02
+0J
+0K
+#505000
+12
+1J
+1K
+#510000
+02
+0J
+0K
+#515000
+12
+1J
+1K
+#520000
+02
+0J
+0K
+#525000
+12
+1J
+1K
+#530000
+02
+0J
+0K
+#535000
+12
+1J
+1K
+#540000
+02
+0J
+0K
+#545000
+12
+1J
+1K
+#550000
+02
+0J
+0K
+#555000
+12
+1J
+1K
+#560000
+02
+0J
+0K
+#565000
+12
+1J
+1K
+#570000
+02
+0J
+0K
+#575000
+12
+1J
+1K
+#580000
+02
+0J
+0K
+#585000
+12
+1J
+1K
+#590000
+02
+0J
+0K
+#595000
+12
+1J
+1K
+#600000
+02
+0J
+0K
+#605000
+12
+1J
+1K
+#610000
+02
+0J
+0K
+#615000
+12
+1J
+1K
+#620000
+02
+0J
+0K
+#625000
+12
+1J
+1K
+#630000
+02
+0J
+0K
+#635000
+12
+1J
+1K
+#640000
+02
+0J
+0K
+#645000
+12
+1J
+1K
+#650000
+02
+0J
+0K
+#655000
+12
+1J
+1K
+#660000
+02
+0J
+0K
+#665000
+12
+1J
+1K
+#670000
+02
+0J
+0K
+#675000
+12
+1J
+1K
+#680000
+02
+0J
+0K
+#685000
+12
+1J
+1K
+#690000
+02
+0J
+0K
+#695000
+12
+1J
+1K
+#700000
+02
+0J
+0K
+#705000
+12
+1J
+1K
+#710000
+02
+0J
+0K
+#715000
+12
+1J
+1K
+#720000
+02
+0J
+0K
+#725000
+12
+1J
+1K
+#730000
+02
+0J
+0K
+#735000
+12
+1J
+1K
+#740000
+02
+0J
+0K
+#745000
+12
+1J
+1K
+#750000
+02
+0J
+0K
+#755000
+12
+1J
+1K
+#760000
+02
+0J
+0K
+#765000
+12
+1J
+1K
+#770000
+02
+0J
+0K
+#775000
+12
+1J
+1K
+#780000
+02
+0J
+0K
+#785000
+12
+1J
+1K
+#790000
+02
+0J
+0K
+#795000
+12
+1J
+1K
+#800000
+02
+0J
+0K
+#805000
+12
+1J
+1K
+#810000
+02
+0J
+0K
+#815000
+12
+1J
+1K
+#820000
+02
+0J
+0K
+#825000
+12
+1J
+1K
+#830000
+02
+0J
+0K
+#835000
+12
+1J
+1K
+#840000
+02
+0J
+0K
+#845000
+12
+1J
+1K
+#850000
+02
+0J
+0K
+#855000
+12
+1J
+1K
+#860000
+02
+0J
+0K
+#865000
+12
+1J
+1K
+#870000
+02
+0J
+0K
+#875000
+12
+1J
+1K
+#880000
+02
+0J
+0K
+#885000
+12
+1J
+1K
+#890000
+02
+0J
+0K
+#895000
+12
+1J
+1K
+#900000
+02
+0J
+0K
+#905000
+12
+1J
+1K
+#910000
+02
+0J
+0K
+#915000
+12
+1J
+1K
+#920000
+02
+0J
+0K
+#925000
+12
+1J
+1K
+#930000
+02
+0J
+0K
+#935000
+12
+1J
+1K
+#940000
+02
+0J
+0K
+#945000
+12
+1J
+1K
+#950000
+02
+0J
+0K
+#955000
+12
+1J
+1K
+#960000
+02
+0J
+0K
+#965000
+12
+1J
+1K
+#970000
+02
+0J
+0K
+#975000
+12
+1J
+1K
+#980000
+02
+0J
+0K
+#985000
+12
+1J
+1K
+#990000
+02
+0J
+0K
+#995000
+12
+1J
+1K
+#1000000
