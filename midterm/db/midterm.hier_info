@@ -1,0 +1,278 @@
+|midterm
+a0 <= hex0[0].DB_MAX_OUTPUT_PORT_TYPE
+clk => freq_div_1KHz:inst4.clk_in
+clean => pulser:inst2.clean
+clean => bcd:inst13.clean12
+clean => mod6:inst16.clean12
+clean => bcd:inst14.clean12
+clean => mod6:inst15.clean12
+a1 <= hex0[1].DB_MAX_OUTPUT_PORT_TYPE
+a2 <= hex0[2].DB_MAX_OUTPUT_PORT_TYPE
+a3 <= hex0[3].DB_MAX_OUTPUT_PORT_TYPE
+a4 <= hex0[4].DB_MAX_OUTPUT_PORT_TYPE
+a5 <= hex0[5].DB_MAX_OUTPUT_PORT_TYPE
+a6 <= hex0[6].DB_MAX_OUTPUT_PORT_TYPE
+b0 <= hex1[0].DB_MAX_OUTPUT_PORT_TYPE
+b1 <= hex1[1].DB_MAX_OUTPUT_PORT_TYPE
+b2 <= hex1[2].DB_MAX_OUTPUT_PORT_TYPE
+b3 <= hex1[3].DB_MAX_OUTPUT_PORT_TYPE
+b4 <= hex1[4].DB_MAX_OUTPUT_PORT_TYPE
+b5 <= hex1[5].DB_MAX_OUTPUT_PORT_TYPE
+b6 <= hex1[6].DB_MAX_OUTPUT_PORT_TYPE
+c0 <= hex2[0].DB_MAX_OUTPUT_PORT_TYPE
+c1 <= hex2[1].DB_MAX_OUTPUT_PORT_TYPE
+c2 <= hex2[2].DB_MAX_OUTPUT_PORT_TYPE
+c3 <= hex2[3].DB_MAX_OUTPUT_PORT_TYPE
+c4 <= hex2[4].DB_MAX_OUTPUT_PORT_TYPE
+c5 <= hex2[5].DB_MAX_OUTPUT_PORT_TYPE
+c6 <= hex2[6].DB_MAX_OUTPUT_PORT_TYPE
+d0 <= hex3[0].DB_MAX_OUTPUT_PORT_TYPE
+d1 <= hex3[1].DB_MAX_OUTPUT_PORT_TYPE
+d2 <= hex3[2].DB_MAX_OUTPUT_PORT_TYPE
+d3 <= hex3[3].DB_MAX_OUTPUT_PORT_TYPE
+d4 <= hex3[4].DB_MAX_OUTPUT_PORT_TYPE
+d5 <= hex3[5].DB_MAX_OUTPUT_PORT_TYPE
+d6 <= hex3[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|midterm|seg_7:inst
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|midterm|bcd:inst13
+Q0 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+clean12 => inst14.ACLR
+clean12 => inst2.ACLR
+clean12 => inst32.ACLR
+clean12 => inst3.ACLR
+clk => inst14.CLK
+clk => inst2.CLK
+clk => inst32.CLK
+clk => inst3.CLK
+count => inst28.IN1
+count => inst19.IN1
+Q1 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+CO13 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|midterm|pulser:inst2
+CO <= inst62.DB_MAX_OUTPUT_PORT_TYPE
+clean => inst57.ACLR
+clean => inst51.ACLR
+clean => inst35.ACLR
+clean => inst34.ACLR
+clean => inst32.ACLR
+clean => inst8.ACLR
+clean => inst3.ACLR
+clean => inst2.ACLR
+clean => inst1.ACLR
+clean => inst.ACLR
+clk => inst57.CLK
+clk => inst51.CLK
+clk => inst35.CLK
+clk => inst34.CLK
+clk => inst32.CLK
+clk => inst8.CLK
+clk => inst3.CLK
+clk => inst2.CLK
+clk => inst1.CLK
+clk => inst.CLK
+Load => inst17.IN0
+Load => inst9.IN0
+Load => inst11.IN0
+Load => inst13.IN0
+Load => inst15.IN0
+Load => inst29.IN0
+Load => inst39.IN0
+Load => inst41.IN0
+Load => inst43.IN0
+Load => inst53.IN0
+Load => inst59.IN0
+Count => inst18.IN1
+pin_name1 <= 999:inst28.pout
+
+
+|midterm|pulser:inst2|999:inst28
+pout <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+0 => inst.IN0
+2 => inst2.IN0
+1 => inst1.IN0
+3 => inst3.IN0
+5 => inst5.IN0
+4 => inst4.IN0
+6 => inst6.IN0
+7 => inst7.IN0
+9 => inst9.IN0
+8 => inst8.IN0
+
+
+|midterm|freq_div_1KHz:inst4
+clk_in => clk_out~reg0.CLK
+clk_in => counter[0].CLK
+clk_in => counter[1].CLK
+clk_in => counter[2].CLK
+clk_in => counter[3].CLK
+clk_in => counter[4].CLK
+clk_in => counter[5].CLK
+clk_in => counter[6].CLK
+clk_in => counter[7].CLK
+clk_in => counter[8].CLK
+clk_in => counter[9].CLK
+clk_in => counter[10].CLK
+clk_in => counter[11].CLK
+clk_in => counter[12].CLK
+clk_in => counter[13].CLK
+clk_in => counter[14].CLK
+clk_in => counter[15].CLK
+clk_in => counter[16].CLK
+clk_in => counter[17].CLK
+clk_in => counter[18].CLK
+clk_in => counter[19].CLK
+clk_in => counter[20].CLK
+clk_in => counter[21].CLK
+clk_in => counter[22].CLK
+clk_in => counter[23].CLK
+clk_in => counter[24].CLK
+clk_in => counter[25].CLK
+clk_in => counter[26].CLK
+clk_in => counter[27].CLK
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => clk_out.OUTPUTSELECT
+
+
+|midterm|seg_7:inst1
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|midterm|mod6:inst16
+Q0 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+clean12 => inst14.ACLR
+clean12 => inst2.ACLR
+clean12 => inst32.ACLR
+clean12 => inst3.ACLR
+clk => inst14.CLK
+clk => inst2.CLK
+clk => inst32.CLK
+clk => inst3.CLK
+count => inst1.IN1
+count => inst19.IN1
+Q1 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+CO13 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|midterm|seg_7:inst85
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|midterm|bcd:inst14
+Q0 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+clean12 => inst14.ACLR
+clean12 => inst2.ACLR
+clean12 => inst32.ACLR
+clean12 => inst3.ACLR
+clk => inst14.CLK
+clk => inst2.CLK
+clk => inst32.CLK
+clk => inst3.CLK
+count => inst28.IN1
+count => inst19.IN1
+Q1 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+CO13 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|midterm|seg_7:inst3
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|midterm|mod6:inst15
+Q0 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+clean12 => inst14.ACLR
+clean12 => inst2.ACLR
+clean12 => inst32.ACLR
+clean12 => inst3.ACLR
+clk => inst14.CLK
+clk => inst2.CLK
+clk => inst32.CLK
+clk => inst3.CLK
+count => inst1.IN1
+count => inst19.IN1
+Q1 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+CO13 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+

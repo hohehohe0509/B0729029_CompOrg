@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/midterm/simulation/qsim
+vhard_block
+Z1 !s110 1574407624
+!i10b 1
+!s100 RZlma3Wd@]a`UeeRKZ=[A0
+IiBA_=5QS9i<hSC3VlUlFm2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1574407622
+Z4 8midterm.vo
+Z5 Fmidterm.vo
+L0 3873
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1574407623.000000
+Z8 !s107 midterm.vo|
+Z9 !s90 -work|work|midterm.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vmidterm
+R1
+!i10b 1
+!s100 m8GVfc?imnD_a>AHZZHk]0
+IG_]N]1NeB0i^NG[k0B:3I3
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vmidterm_vlg_vec_tst
+R1
+!i10b 1
+!s100 7P@H23h9cZinmJ5C>ddF01
+I78mM=GXZ1H3XNSJ3V:7lQ2
+R2
+R0
+w1574407620
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+!s108 1574407624.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
