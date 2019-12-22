@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/LAB09/simulation/qsim
+vhard_block
+Z1 !s110 1577027507
+!i10b 1
+!s100 <1<B6<N7??N3M5oP9Jdg?2
+IoghebSAzj3LcZh2WESgiV1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1577027502
+Z4 8LAB09.vo
+Z5 FLAB09.vo
+L0 2230
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1577027507.000000
+Z8 !s107 LAB09.vo|
+Z9 !s90 -work|work|LAB09.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vLAB09
+R1
+!i10b 1
+!s100 4>`OodI7T6_m_IdGRKPda2
+IFfSc=n<]f=^NzOTDdJkTM1
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@l@a@b09
+vLAB09_vlg_vec_tst
+!s110 1577027508
+!i10b 1
+!s100 _O18YFo3ZkJ4K]Wk[bQcc0
+INTVB<]nd8XVCCj5?o;a<L2
+R2
+R0
+w1577027500
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+!s108 1577027508.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@l@a@b09_vlg_vec_tst
