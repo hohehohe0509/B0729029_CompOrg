@@ -1,0 +1,2 @@
+Warning (10273): Verilog HDL warning at function_unit.v(84): extended using "x" or "z" File: C:/final/function_unit.v Line: 84
+Info (10281): Verilog HDL Declaration information at datapath.v(206): object "MUXB" differs only in case from object "muxB" in the same scope File: C:/final/datapath.v Line: 206

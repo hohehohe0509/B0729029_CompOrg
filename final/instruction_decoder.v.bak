@@ -1,0 +1,28 @@
+module instruction_decoder(OP,DR,SA,SB,DA,AA,BA,FS,MB,MD,RW,MW,PL,JB,BC);
+
+input [6:0]OP;
+input [2:0]DR,SA,SB;
+
+output[2:0]DA,AA,BA;
+output[3:0]FS;
+output MB,MD,RW,MW,PL,JB,BC;
+
+reg	[2:0]DA,AA,BA;
+reg	[3:0]FS;
+reg	MB,MD,RW,MW,PL,JB,BC;
+
+always @(*) begin
+DR=DA;
+SA=AA;
+SB=BA;
+MB=OP[6];
+MD=OP[4];
+RW=~OP[5];
+JB=OP[4];
+BC=OP[0];
+MW=OP[5]&~OP[6];
+PL=OP[5]&OP[6];
+FS[3:1]=OP[3:1];
+FS[0]=~PL&OP[0];
+end
+endmodule

@@ -1,0 +1,10 @@
+module data_memory(Address_out,Data_out,MW,DI);
+input [7:0]Address_out;
+input [7:0]Data_out;
+input MW;
+
+output[7:0]DI;
+reg [7:0]DI;
+
+always @(*) begin
+if(MW==0)
